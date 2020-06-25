@@ -1,0 +1,44 @@
+/* body { background: #000; } */
+/* Mengatur warna background web */
+form {
+  width:500px;
+  margin:50px auto;
+}
+/* Skrip diatas befungsi untuk menginstruksikan browser untuk mengatur lebar dari form menjadi 500px dan mengatur
+margin atas dan bawah selebar 50px. 'auto' di sini berarti bahwa kiri / kanan margin diatur secara otomatis. */
+.search {
+    padding:10px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:1px solid #1abc9c; /*#dbdbdb;*/
+    float:left;
+}
+/* Skrip ini digunakan untuk style kotak pencarian yang memiliki class .search. Kita telah menentukan padding
+atas / bawah 8px dan padding kiri / kanan 15px. Kita juga telah menentukan warna latar belakang menggunakan
+nilai RGBA, di mana tiga nilai pertama mengacu pada warna RGB (Red, Green, Blue), dan yang terakhir (‘A’)
+nilai ini mengacu pada transparansi. Semakin rendah nilai transparansi, akan tampak lebih transparan elemen
+tersebut. Kita juga telah menentukan border selebar 0px. Kenapa kok nilainya 0? Dilakukan hanya sebagai
+tindakan pencegahan untuk memastikan bahwa browser versi lama tidak akan memberikan border secara default. */
+.button {
+    position:relative;
+    padding:10px 15px;
+    left:-8px;
+    border:2px solid #53bd84;
+    background-color:#53bd84;
+    color:#fafafa;
+}
+/* Skrip diatas merupakan styling untuk tombol pencarian. Beberapa hal yang perlu diperhatikan di sini:
+position: relative – Tombol pencarian, secara default, ditempatkan di sebelah kanan kotak pencarian
+dengan margin beberapa piksel antara elemen-elemen. Karena kita ingin tombol berada tepat di sebelah
+kotak pencarian, maka kita mengaturnya dengan posisi relatif. left: -8px – Karena elemen sekarang
+memiliki posisi relatif, kita bisa menggeser ke kiri dengan memberikan posisi negatif. padding: 6px 15px
+– Bagian atas atau bawah padding pada bagian tombol kurang lebar, maka kita setting padding agar lebar
+dari tombol sama seperti lebar pada form. */
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+/* Untuk skrip diatas berfungsi untuk mengatur warna button ketika disorot dengan mouse. Sejauh ini, kita
+telah membuat kotak pencarian standar yang dapat digunakan pada sebagian besar situs web dengan tambahan
+beberapa tweak. Tapi bagaimana jika ingin menambahkan sedikit lebih style ke kotak pencarian? Untungnya,
+kita dapat menggunakan CSS lagi untuk membuat lebih elegan, karena CSS tidak hanya terbatas pada perubahan
+warna dan menambahkan border. */

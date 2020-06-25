@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+	background: black; /* <!--#3498db--> <!-- warna dasar web --> */
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	color:black;
+}
+
+header .judul{
+	text-align: center;
+	font-size: 17pt;
+	color: white;
+}
+
+/* hr {
+	border:0;
+	background:#dedede;
+	height:1px;
+} */
+
+header .deskripsi{
+	font-size: 11pt;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: auto;
+	padding: 4em 1em;
+	width: 652px;
+	height: 1165px;
+}
+
+.container ul {
+	display:grid;
+	width: 960px;
+	list-style-type:none;
+	margin:0;padding:0;
+	grid-template-columns: repeat(2,auto);
+	grid-template-rows: repeat(3,auto);
+}
+
+.container ul li {
+	margin:0;
+	float : center;
+}
+
+.wrap {
+	/* width: 950px; */
+	width: 100%;
+	margin:25px auto;
+}
+/* .wrap {
+	width: 90%;
+	margin:25px auto;
+} */
+
+nav.menu ul {
+	overflow:hidden;
+	color:#fff;
+	list-style: none;
+	float:left;
+	padding:0;
+	/* width: 650px; */
+	width: 100%;
+	margin:0 0 0;
+	background: #1abc9c;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+}
+
+nav.menu ul li {
+	margin:0;
+	float:left;
+}
+
+nav.menu ul a {
+	padding:10px;
+	display:block;
+	font-weight:600;
+	font-size: 16px;
+	color:#fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+nav.menu ul a:hover {
+	text-decoration: underline;
+	background:#16a085;
+}
+
+.blog {
+	float:left;
+}
+
+.conteudo {
+	width:600px;
+	padding:25px;
+	margin:25px auto;
+	background: #fff;
+	border:1px solid #dedede;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	justify-self:center;
+}
+
+.conteudo img {
+	min-width: 650px;
+	margin:0 0 25px -25px;
+	max-width: 650px;
+	/* justify-self:center; */
+}
+
+img {
+	width: 100px;
+	height : 800px;
+}
+
+.conteudo h1 {
+	padding:0;
+	margin:0 0 15px;
+	font-weight: normal;
+	color: #666;
+	font-family: Georgia;
+}
+
+.conteudo p:last-child {
+	margin: 0;
+}
+
+.conteudo .continue-lendo {
+	color:#000;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.conteudo .continue-lendo:hover {
+	margin-left:10px;
+}
+
+.post-info {
+	float: right;
+	font-size: 12px;
+	margin: -10px 0 15px;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+
+	.header {
+		position:inherit;
+	}
+
+	.wrap {
+		width: 90%;
+		margin:25px auto;
+	}
+
+	nav.menu ul {
+		width: 100%;
+	}
+
+	nav.menu ul {
+		float:inherit;
+	}
+
+	nav.menu ul li {
+		float:inherit;
+		margin:0;
+	}
+
+	nav.menu ul a {
+		padding:15px;
+		font-size: 16px;
+		border-top:1px solid #1abf9f;
+		border-bottom:1px solid #16a085;
+	}
+
+	img {
+		width: 300px;
+		height : 300px;
+	}
+
+	.blog {
+		width:90%;
+	}
+
+	.conteudo {
+		float:inherit;
+		/* margin:0 auto 25px; */
+		margin:25px auto;
+		width:90%;
+		border:1px solid #dedede;
+		padding:5%;
+		background: #fff;
+	}
+
+	.conteudo img {
+		max-width: 100%;
+		margin:0 0 25px -5%;
+		min-width: 100%;
+		/* margin:-5% 0 25px -5%; */
+	}
+
+	.conteudo .continue-lendo:hover {
+		margin-left:0;
+	}
+}
+
+@media screen and (max-width: 460px) {
+
+	nav.menu ul a {
+		padding:15px;
+		font-size: 14px;
+	}
+
+	.post-info {
+		display:none;
+	}
+
+	.conteudo {
+		margin:25px auto;
+	}
+
+	.conteudo img {
+		margin:-5% 0 25px -5%;
+	}
+}
